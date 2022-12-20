@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Motos{% endblock %}
+
+{% block body %}
+    <h1>Edit Motos</h1>
+
+    {{ include('motos/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_motos_index') }}">back to list</a>
+
+    {{ include('motos/_delete_form.html.twig') }}
+{% endblock %}
